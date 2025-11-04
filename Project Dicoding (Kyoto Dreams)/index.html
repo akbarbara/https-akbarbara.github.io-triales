@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto Dreams - Jelajahi Jepang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">Kyoto Dreams</a>
+            <button class="hamburger" id="hamburger-menu" aria-label="Buka menu navigasi">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#kyoto">Kyoto</a></li>
+                    <li><a href="#tokyo">Tokyo</a></li>
+                    <li><a href="#kuliner">Kuliner</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Jelajahi Pesona Jepang</h1>
+                <p>Dari kuil kuno Kyoto hingga denyut modern Tokyo</p>
+                <a href="#content" class="cta-button">Jelajahi Sekarang</a>
+            </div>
+        </section>
+        <div id="content">
+            <div class="content-wrapper container">
+                <div class="main-column">
+                    <article id="kyoto" class="hidden-anim">
+                        <h2>Kyoto: Jantung Tradisi Jepang</h2>
+                        <img src="kinkaku_ji.jpg" alt="[Gambar ilustrasi kuil di Kyoto]" class="featured-image">
+                        <p>Kyoto, ibu kota kuno Jepang, adalah tempat di mana sejarah dan tradisi masih hidup dan bernafas. Kota ini adalah rumah bagi ribuan kuil Buddha dan kuil Shinto. Anda bisa menghabiskan berhari-hari menjelajahi keindahan arsitektur tradisional, taman zen yang menenangkan, dan hutan bambu yang ikonik. Nikmati teh hijau matcha di upacara minum teh tradisional atau saksikan geisha berjalan-jalan di distrik Gion saat senja. Pengalaman di Kyoto adalah jendela ke masa lalu yang magis.</p>
+                    </article>
+                    <article id="tokyo" class="hidden-anim">
+                        <h2>Tokyo: Metamorfosis Modern</h2>
+                        <img src="shibuya_cross.jpg" alt="[Gambar ilustrasi Shibuya Crossing di Tokyo]" class="featured-image">
+                        <p>Sebagai kontras dari Kyoto, Tokyo adalah simbol modernitas dan inovasi Jepang. Dari persimpangan Shibuya yang sibuk, yang merupakan persimpangan pejalan kaki tersibuk di dunia, hingga gedung pencakar langit megah di Shinjuku, Tokyo adalah kota yang tidak pernah tidur. Jelajahi distrik perbelanjaan Harajuku yang penuh warna, kunjungi pasar ikan Tsukiji yang legendaris, atau nikmati pemandangan kota dari Tokyo Skytree. Tokyo menawarkan pengalaman urban yang tak tertandingi dengan sentuhan budaya pop yang unik.</p>
+                    </article>
+                    <article id="kuliner" class="hidden-anim">
+                        <h2>Surga Kuliner: Lebih dari Sekadar Sushi</h2>
+                        <img src="ramen.jpg" alt="[Gambar ilustrasi semangkuk ramen]" class="featured-image">
+                        <p>Kuliner Jepang, atau 'washoku', telah diakui oleh UNESCO sebagai Warisan Budaya Takbenda. Tentu saja ada sushi dan sashimi yang segar, tetapi kekayaan kuliner Jepang jauh melampaui itu. Cicipi ramen yang gurih, udon yang kenyal, tempura yang renyah, atau okonomiyaki yang lezat. Jangan lupakan juga hidangan penutup manis seperti mochi dan dorayaki. Setiap daerah di Jepang memiliki spesialisasi kuliner sendiri, menjadikan setiap perjalanan sebagai petualangan rasa yang tak terlupakan.</p>
+                    </article>
+                    <section id="gallery" class="card hidden-anim">
+                        <h2>Galeri Foto Jepang</h2>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="gallery/fuji.jpg" alt="Gunung Fuji">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="gallery/shrine.jpg" alt="Kuil Fushimi Inari, Kyoto">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="gallery/sakura.jpg" alt="Bunga Sakura Mekar">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="gallery/tokyo_tower.jpg" alt="Tokyo Tower malam hari">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="gallery/bamboo_forest.jpg" alt="Hutan Bambu Arashiyama, Kyoto">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="gallery/sushi.jpg" alt="Sushi segar Jepang">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="contact" class="card hidden-anim">
+                        <h2>Hubungi Kami</h2>
+                        <p>Punya pertanyaan atau ingin berbagi pengalaman perjalanan Anda ke Jepang? Jangan ragu untuk menghubungi kami melalui formulir di bawah ini!</p>
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap:</label>
+                                <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+                                <div class="error-message" id="name-error">Nama tidak boleh kosong dan harus minimal 3 karakter.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required placeholder="Masukkan alamat email Anda">
+                                <div class="error-message" id="email-error">Email tidak valid.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subjek:</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Subjek pesan Anda">
+                                <div class="error-message" id="subject-error">Subjek tidak boleh kosong.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan:</label>
+                                <textarea id="message" name="message" required placeholder="Tulis pesan Anda di sini"></textarea>
+                                <div class="error-message" id="message-error">Pesan tidak boleh kosong dan harus minimal 10 karakter.</div>
+                            </div>
+                            <button type="submit">Kirim Pesan</button>
+                            <div class="form-status-message" id="form-status"></div>
+                        </form>
+                    </section>
+                </div> 
+                <aside>
+                    <section class="profile-card hidden-anim" id="profil">
+                        <h3>Tentang Penulis</h3>
+                        <img src="gambar.jpg" alt="[Foto profil penulis]">
+                        <h4>Muhammad Akbar A. S.</h4>
+                        <p style="font-style: italic;">Penggemar Budaya Jepang & Web Developer</p>
+                        <table>
+                            <tr>
+                                <th>Domisili:</th>
+                                <td>Semarang</td>
+                            </tr>
+                            <tr>
+                                <th>Email:</th>
+                                <td>akbarbara194521@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th>Impian:</th>
+                                <td>Web Developer Profesional</td>
+                            </tr>
+                        </table>
+                    </section>
+                </aside>
+            </div> 
+        </div> 
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kyoto Dreams. Oleh Muhammad Akbar A. S.</p>
+        </div>
+    </footer>
+    <div class="lightbox-overlay" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="Gambar Galeri" class="lightbox-image" id="lightbox-image">
+            <span class="lightbox-prev" id="lightbox-prev">&#10094;</span>
+            <span class="lightbox-next" id="lightbox-next">&#10095;</span>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
